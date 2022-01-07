@@ -12,9 +12,7 @@
 
 ・ROS (Meldic Morenia)
 
-# 準備
-
-今回の課題で必要なものは以下の通りだ。
+また、今回の課題で必要なものは以下の通りだ。
 
 ・Raspberry Pi 4 Computer Model B (4GB RAM)
 
@@ -22,11 +20,11 @@
 
 　公式サイトURL：https://urlzs.com/AL7kw
  
-また、以下のようにウェブカメラとラズパイを接続する。
+※ウェブカメラは下図のようにラズパイと接続する。
 
+![S__23232538](https://user-images.githubusercontent.com/94817675/148517303-4502f90a-ac4e-48e4-8046-bf1a5789f41c.jpg)
 
-
-# インストール
+# 準備
 
 ・ROSのインストール
 
@@ -40,6 +38,17 @@
  ./step0.bash
  
  ./step1.bash
+ ```
+
+・ワークスペースの準備(変更あり)
+
+　.bashrcの118行目以降に以下のコードを入力
+
+ ```
+ source /opt/ros/noetic/setup.bash
+ source ~/ros_setup_scripts_Ubuntu20.04_server/catkin_ws/devel/setup.bash
+ export ROS_MASTER_URI=http://localhost:11311
+ export ROS_HOSTNAME=localhost
  ```
 
 ・パッケージをラズパイに入れる
