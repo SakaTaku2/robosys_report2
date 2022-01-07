@@ -64,22 +64,54 @@
   rosrun cv_camera cv_camera_node
   ```
  
-  ➂3つ目の端末で以下プログラムを入力する。
+ 　➂3つ目の端末で以下プログラムを入力する。
   
   ```
   rosrun web_video_server web_video_server
   ```
   
-  ⓸ブラウザで「ラズパイのIPアドレス:8080」と検索すると、ウェブカメラの映像が見れる。
+　ブラウザで「ラズパイのIPアドレス:8080」と検索すると、ウェブカメラの映像が見れる。
   
 ・count.pyの実行
 
-　➀
-
-
+　➀1つ目の端末で以下のプログラムを入力する。
+　
+  ```
+  roscore
+  ```
+  
+  ➁2つ目の端末で以下のプログラムを入力する。
+  
+  ```
+  catkin_make
+  
+  chmod +x count.py
+  
+  rosrun mypkg count.py
+  ```
+  
+  ➂3つ目の端末で以下のプログラムを入力する。
+  
+  ```
+  rostopic echo /count_up
+  ```
+  
 ・twice.pyの実行
 
-  
+　➀count.pyの➀～➁を実行する。
+
+　➁3つ目の端末で以下のプログラムを入力する。
+ 
+　```
+　rosrun mypkg twice.py
+　```
+ 
+　➂4つ目の端末で以下のプログラムを入力する。
+ 
+　```
+　rostopic echo /twice
+　```
+
 # サンプル動画
 
 URL:
