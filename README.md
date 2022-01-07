@@ -55,14 +55,30 @@
 　```　
 　roscore 
 　```
-　
-　➁2つ目の端末で以下のプログラムを入力する。この時、1行目を実行し、「/dev/video0」があるか確認する。
-
-　```
-　ls /dev/video*
  
+　➁2つ目の端末で以下のプログラムを入力する。この時、1行目を実行し、「/dev/video0」があるか確認する。
+ 
+  ```
+  ls /dev/video*
+  
   rosrun cv_camera cv_camera_node
   ```
+ 
+  ➂3つ目の端末で以下プログラムを入力する。
+  
+  ```
+  rosrun web_video_server web_video_server
+  ```
+  
+  ⓸ブラウザで「ラズパイのIPアドレス:8080」と検索すると、ウェブカメラの映像が見れる。
+  
+・count.pyの実行
+
+　➀
+
+
+・twice.pyの実行
+
   
 # サンプル動画
 
