@@ -114,7 +114,7 @@
 
 # サンプル動画
 
-URL:
+URL:https://youtube.com/watch?v=9qXL35fNCqk&feature=share
 
 # ライセンス
 
