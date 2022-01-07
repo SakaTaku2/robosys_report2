@@ -40,25 +40,30 @@
  ./step1.bash
  ```
 
-・ワークスペースの準備(変更あり)
-
-　.bashrcの118行目以降に以下のコードを入力
-
- ```
- source /opt/ros/noetic/setup.bash
- source ~/ros_setup_scripts_Ubuntu20.04_server/catkin_ws/devel/setup.bash
- export ROS_MASTER_URI=http://localhost:11311
- export ROS_HOSTNAME=localhost
- ```
-
 ・パッケージをラズパイに入れる
 
  ```
- 
+ git clone git@github.com:SakaTaku2/mypkg.git
  ```
  
 # 実行方法
 
+・ウェブカメラの動作確認
+
+　➀一つ目の端末で以下のプログラムを入力する。
+
+　```　
+　roscore 
+　```
+　
+　➁2つ目の端末で以下のプログラムを入力する。この時、1行目を実行し、「/dev/video0」があるか確認する。
+
+　```
+　ls /dev/video*
+ 
+  rosrun cv_camera cv_camera_node
+  ```
+  
 # サンプル動画
 
 URL:
