@@ -1,4 +1,4 @@
-# mypkg
+# robosys_report2
 
 ロボットシステム学「課題２」
 
