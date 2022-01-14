@@ -118,4 +118,4 @@ URL:https://youtube.com/watch?v=9qXL35fNCqk&feature=share
 
 # ライセンス
 
-GNU General Public License v3.0　
+BSD 2-Clause "Simplified" License
