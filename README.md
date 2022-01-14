@@ -95,8 +95,6 @@
   ➁2つ目の端末で以下のプログラムを入力する。
   
   ```
-  catkin_make
-  
   chmod +x count.py
   
   rosrun mypkg count.py
