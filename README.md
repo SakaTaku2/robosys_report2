@@ -130,4 +130,8 @@ URL:https://youtube.com/watch?v=9qXL35fNCqk&feature=share
 
 # ライセンス
 
+Copyright (c) 2022 Ryuichi Ueda
+
+Copyright (c) 2022 Takumi Sakamoto
+
 BSD 2-Clause "Simplified" License
